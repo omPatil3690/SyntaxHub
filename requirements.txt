@@ -1,0 +1,32 @@
+# Web framework
+fastapi==0.115.4
+uvicorn[standard]==0.32.0
+
+# Shared
+pydantic==2.9.2
+sqlalchemy[asyncio]==2.0.35
+asyncpg==0.29.0
+pgvector==0.3.5
+
+# Ingestion (Phase 1)
+httpx[http2]==0.27.2
+beautifulsoup4==4.12.3
+markdownify==0.13.1
+tiktoken==0.8.0
+
+# Retrieval (Phase 2)
+rank_bm25==0.2.2
+
+# Analyzer (Phase 5/6) — pin tree_sitter; tree_sitter_languages targets the 0.21 API
+tree_sitter==0.21.3
+tree_sitter_languages==1.10.2
+
+# LLM (Phase 8, only needed when LLM_PROVIDER=openai)
+openai==1.51.0
+
+# MCP server (Phase 11)
+mcp==2.*
+
+# dev / test
+pytest==8.3.3
+pytest-asyncio==0.24.0
