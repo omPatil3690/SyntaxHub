@@ -18,8 +18,8 @@ tiktoken==0.8.0
 rank_bm25==0.2.2
 
 # Analyzer (Phase 5/6) — pin tree_sitter; tree_sitter_languages targets the 0.21 API
-tree_sitter==0.21.3
-tree_sitter_languages==1.10.2
+# tree_sitter
+# tree_sitter_languages
 
 # LLM (Phase 8, only needed when LLM_PROVIDER=openai)
 openai==1.51.0
